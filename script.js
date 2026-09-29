@@ -66,3 +66,9 @@ document.head.appendChild(style);
 document.querySelectorAll('.content-card, .program-day, .partner-card, .info-box').forEach(el => {
     observer.observe(el);
 });
+
+// There is no registration deadline.
+const deadline = document.querySelector('.deadline');
+if (deadline) {
+    deadline.remove();
+}
